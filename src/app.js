@@ -6,6 +6,11 @@ import cors from "cors";
 const app = express()
 
 app.use(express.json())
+app.use(cors())
+
+app.get("/testedeploy", async (req, res) => {
+    res.status(200).send("TESTE");
+  });
 
 tarefasController(app)
 usuariosController(app)
