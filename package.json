@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "bdon": "node ./src/infra/bdconnect.js",
+    "bdoff": "node ./src/infra/bddisconnect.js",
+    "tabelaUsuarios": "node ./src/infra/usuariosCreateAndPopulate.js"
+  }
+}
